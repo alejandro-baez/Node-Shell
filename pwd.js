@@ -11,9 +11,8 @@
 //   process.stdout.write("\nprompt > ");
 //   // });
 // }
-module.exports = function () {
+module.exports = function (done) {
   const process = require("process");
-  process.stdout.write(`${process.cwd()}\n`);
 
-  process.stdout.write("\nprompt > ");
+  done(`${process.cwd()}\n`);
 };
